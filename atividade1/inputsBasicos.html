@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        section{
+            border: solid 2px #000; 
+        }
+        div{
+            border: solid 2px #000; 
+        }
+    </style>
+    
+    <title>Estudos sobre inputs em forms</title>
+</head>
+<body>
+    <div>
+        <h1>Inputs Basicos</h1>
+    </div>   
+    <br>
+    <hr>   
+    <br>
+    <section> <form action="/https://www.globo.com" method="post">
+                <label>Nome</label><br>
+                <input placeholder="insira seu nome" type="text" class="" id="" /> <br>
+                <label>Senha<label>        <br> 
+                    <input type="password" class="senha" id="" />
+                    <br><br><br>
+                    <label>Time</label><br>
+                    <input type="text" placeholder="insira seu time" name="time" list="listaTime"  />
+                    <datalist id="listaTime" />
+                        <option value="Santos" />
+                        <option value="Palmeiras" />
+                        <option value="Corinthians" />
+                    </datalist>
+                    <!---fechar as tags com / é uma maneira simplificada de fecha-las--->
+                <br><br><label>Opções</label>
+                <input type="radio" name="opcao">1
+                <input type="radio" name="opcao">2
+                <input type="radio" name="opcao">3
+                <br><br><label>Multipla escolha</label><br>
+                <input type="checkbox" name="multiplo">a
+                <input type="checkbox" name="multiplo">b
+                <input type="checkbox" name="multiplo">c
+                <br>
+                <label>Texto</label><br>
+                <textarea name="texto" id="" cols="30" rows="15" >
+                </textarea><br>
+                <label>Arquivo</label><br>
+                <input type="file" name="arquivo">
+
+                <br><br><label>Sexo</label><br>
+                <select name="sexo" id="">
+                    <option value="masculino" >masculino</option>
+                    <option value="feminino" >feminino</option>
+                    <option value="nãoBinario" >não Binário</option>
+                    <option value="prefiroNaoinformar">Prefiro Não informar</option>
+                </select>
+                <br><br>
+                <!-----<label>marcas</label>
+                <select name="carro" id="">
+                    <optgroup label="Alemaes">
+                        <option value="mercedes">mercedes</option> <br> <br>
+                    </optgroup>-->
+                    <br>
+            
+                    <input type="button" value="botaoSemAcao"><br><br>
+                    <input type="submit" value="Enviar">
+
+                </form>
+    </section>
+</body>
+</html>
