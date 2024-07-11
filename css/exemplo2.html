@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embarcado</title>
+    <!--exemplo de CSS embarcado, código dentro
+    do head-->
+    <style>
+        body{
+            background-color: salmon;
+
+        }
+        h1{
+            color:red;
+            font-size: 55px;
+        }
+        /*display block colocar os elementos dispostos em bloco*/
+        input{
+            display: block;
+            margin-bottom: 20px;
+            background-color: seagreen;
+        }
+        label{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .tracejado{
+            border: dashed 2px #000;
+            background-color: steelblue;
+        }
+        #campo_email{
+            height: 45px;
+            background-color: #940b2b;
+        }
+        /* configuração de position, top para fazer a div
+        flutuar*/
+        /*html/css tem 3 dimensões(x,y,z)*/
+        #box-exemplo{
+            width: 400px;
+            height: 400px;
+            background-color: #940b2b;
+            position: absolute;
+            top: 0px;
+        }
+        /*formulario com elementos dispostos em blocos, camada
+        z permite colocar "a frente" ou "atras" de outros elementos*/
+        form{
+            z-index: 2;
+            display: block;
+            position: absolute;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo CSS 2</h1>
+    <form>
+        <label action="" method="post"> Nome </label>
+        <input type="text" name="nome">
+        <label>E-mail</label>
+        <input class="tracejado" id="campo_email" type="email" name="email">
+        <label>Senha</label>
+        <input  class="tracejado" type="password" name="senha">
+
+    </form>
+    <div id="box-exemplo">
+
+    </div>
+</body>
+</html>
