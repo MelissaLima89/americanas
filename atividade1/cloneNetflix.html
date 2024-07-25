@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+<!---USO DA FONTE ROBOTO-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+    /*configurações do botao*/
+        .botao{
+            background-color: red;
+            text: bold;
+            margin: 0px;
+            width: 80px;
+            height: 55px;
+            color: white;
+            margin: none;
+            border-radius: 5px;
+            border: none;
+        }
+        .botao:hover{
+            cursor: pointer;
+            color: white;
+        }
+        /*configuracoes do input de email*/
+        .email{
+            margin-right: 0px;
+            width: 300px;
+            height: 50px;
+        }
+        /*programação do cabeçalho da pagina*/
+        #primeira{
+            background-image: url('backNetflix.jpg');
+            text-decoration: white;
+            font-weight: 20px;
+        }
+        section > div >h1 {
+            color: white;
+            font-size: 50px;
+            margin: auto;
+        }
+        #primeira > div >p {
+            color: white;
+            font-size: 30px;
+            margin: auto;
+        }
+        #primeira > div{
+            margin-left: 25%;
+        }
+        #primeira > img{
+            height: 60px;
+            margin: 50px;
+        }
+        /*na pagina há 4 sections, a configuração é padrão para todas*/
+        .corpo{
+            background-color: black;
+            height: 250px;
+            width: 68%;
+            font-size: 20px;
+            color: white;
+            padding: 10px;
+            padding-left: 400px;
+            position:static;
+        }
+        .corpo > div{
+            display: inline-block; 
+        }
+        #img{
+            position: absolute;
+            padding-left: 450px;
+            
+        }
+        body{
+            font-family: "Roboto", sans-serif;
+            font-weight: 50px;
+            background-color: #373737;
+            padding: 0px;
+            margin: 0px;
+        }
+        /*configuracao da section .baixo com as perguntas frequentes*/
+        .baixo {
+            height: 700px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            font-family: "Roboto", sans-serif;
+            margin-top: 50px;
+        }
+        .itens{
+            list-style: none;
+            width: 900px;
+            background-color: #373737;
+            margin: auto;
+            height: 30px;
+            padding: 10px;
+            
+
+        }
+        .baixo > h2 {
+           text-align: center;
+           font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        ul > li:hover{
+            cursor: pointer;
+            color: white;
+            
+        }
+        #segInput{
+            margin-left: 35%;
+            font-size: 12px;
+            position: absoulte;
+        }
+        /*formatação do rodapé da página*/
+        footer{
+            height: 300px;
+            background-color: black;
+            padding: 50px;
+            padding-left: 50px;
+            color: silver;
+            
+        }
+        a{
+            text-decoration: none;
+            color: silver;
+        }
+        footer > div{
+            display: inline-block;
+            padding-right: 100px;
+        }
+        .transparencia {
+            height: 413px;
+            background-color: #00000020;
+            width: 100%;
+            position: absolute;
+            z-index: 100%;
+        }
+        input{
+            background: transparent;
+            border-color: white;
+        }
+        .formatitem{
+            background-color: transparent;
+            border: none;
+        }
+        .formatitem> :hover{
+            cursor: pointer;
+            color: white;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <!---Essa div adiciona uma caixa de transparencia preta para o
+    cabeçalho da página section-->
+    <!---<div class="transparencia">
+            </p><br>
+    </div>--->
+    <section id="primeira">
+        <img src="/imagens/logoSemFundo.png">
+
+        <div>
+        <h1>Filmes, séries e muito <br>mais. Sem limites.</h1>
+        <p>Assista onde quiser. Cancele quando quiser.<p><br>
+            <p>Pronto para assistir? Informe seu
+                e-mail para criar ou reiniciar sua assinatura.
+            </p><br>
+                <input  class="email" placeholder="Email" type="email" name="email" /> <input type="button" value="Vamos lá" class="botao">
+            </div>
+    
+    </section><br>
+<!---primeira section-->
+    <section class="corpo">
+        <div class="texto">
+            <h3>
+                Aproveite na TV.
+            </h3>
+            <p>Assita em Smart TVs, Playstation, Xbox, <br>
+                Chromecast, Apple TV, aparelhos de Blu-ray e<br>
+                outros dispositivos.<br>
+            </p>
+        </div>
+        <div class="imagem">
+            <img src="/imagens/device-pile2.png">
+        </div>
+    </section><br> 
+<!--segunda section-->
+    <section class="corpo">
+        <div class="texto">
+            <h3>
+                Baixe séries para <br>assistir offline
+            </h3>
+            <p>Salve seus títulos favoritos e sempre tenha<br>
+                algo para assistir.
+            </p>
+        </div>
+        <div class="imagem">
+            <img width="220" height="220" src="/imagens/mobile-0819.jpg">
+        </div>
+    </section><br> 
+
+    </section><br>
+<!--terceira section--->
+    <section class="corpo">
+        <div class="texto">
+            <h3>
+                Assista quando quiser.
+            </h3>
+            <p>Assista no celular, tablet, Smart TV ou<br>
+            notebook sem pagar a mais por isso.
+            </p>
+        </div>
+        <div class="imagem">
+            <img width="220" height="220" src="/imagens/device-pile.png">
+        </div>
+    </section><br>
+    <!--quarta section--->
+    <section class="corpo">
+        <div class="texto">
+            <h3>
+                Crie perfis para<br>
+                crianças.
+            </h3>
+            <p>Deixe as crianças se aventurarem com seus<br>
+            personagens favoritos em um espaço feito só <br>
+            para elas, sem pagar a mais por isso.
+            </p>
+        </div>
+        <div imagem ="imagem">
+            <img width="220" height="220" src="/imagens/kidsNetflix.png">
+        </div>
+    </section>
+    <!---SECTION COM OS ITENS DA LISTA perguntas frequentes-->
+    <section class="baixo">
+        <br><br><h2 id="quotes">Perguntas frequentes</h2>
+        <ul>
+            <li class="itens">
+                <button type ="button" class="formatitem"><h3>Como faço para cancelar?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" dataIcon="PlusStandard" role="img" aria-hidden="true" fill="white;"></svg>
+                </button>   
+                </li><br>
+            <li class="itens">
+                <button type ="button" class="formatitem"><h3>Quanto custa a Netflix?</h3> </button>
+                    </li><br>
+            <li class="itens">
+                <button type ="button" class="formatitem"><h3>Onde posso assistir?</h3> </button></li><br>
+            <li class="itens">
+                <button type ="button" class="formatitem"><h3>Como faço para cancelar?</h3></button></li><br>
+            <li class="itens">
+                <button type ="button" class="formatitem"><h3>O que eu posso assistir na Netflix?</h3></button></li><br>
+            <li class="itens">
+                <button type ="button" class="formatitem"><h3>A Netflix é adequada para crianças?</h3></button></li>
+        </ul>
+        <div id="segInput">
+        <p>Pronto para assistir? Informe seu
+                e-mail para criar ou reiniciar sua assinatura.
+            </p><br>
+                <input  class="email" placeholder="Email" type="email" name="email" /> <input type="button" value="Vamos lá" class="botao">
+        <div>
+    </section>
+    <br>
+    <footer>
+        <p>Dúvidas? Ligue 0800 591 2876</p>
+        <div>
+        <a href="#quotes">Perguntas Frequentes</a><br>
+        <a href="http://ir.netflix.com/">Relação com investidores</a><br>
+        <a href="https://www.netflix.com/watch">Formas de assistir</a><br>
+        <a href="https://help.netflix.com/legal/corpinfo">Informações corporativas</a><br>
+        <a href="https://www.netflix.com/br/browse/genre/839338">Só na Netflix</a><br>
+        </div>
+        <div>
+        <a href="https://help.netflix.com/">Centro de ajuda</a> <br>
+        <a href="https://jobs.netflix.com/jobs">Carreiras</a><br>
+        <a href="https://help.netflix.com/legal/termsofuse"> Termos de uso</a><br>
+        <a href="https://help.netflix.com/contactus">Entre em contato</a><br><br>
+        </div>
+        <div>
+        <a href="https://www.netflix.com/youraccount">Conta</a><br>
+        <a href="https://www.netflix.com/redeem">Resgatar cartão pré-pago</a> <br>
+        <a href="https://help.netflix.com/legal/privacy">Privacidade</a><br>
+        <a href="https://fast.com/">Teste de velocidade</a><br><br>
+        </div>
+        <div>
+        <a href="https://media.netflix.com/">Imprensa</a><br>
+        <a href="https://www.netflix.com/gift-cards">Comprar cartão pré-pago</a><br>
+        <a href="https://www.netflix.com/br/#">Preferências de cookies</a> <br>
+        <a href="https://help.netflix.com/legal/notices">Avisos de legais</a><br><br>
+        </div>
+    </footer>
+    <!--<section class="rodape">
+
+    </section>-->
+</body>
+</html>

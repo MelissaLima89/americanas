@@ -4,67 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Americanas</title>
+     <!--USO DA FONTE RUBIK-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <style>
-        section{
-            background-color: red;
-            height: 120px;
-            width: 100%
+        header{
+            background-color: rgb(248, 5, 50);
+            width: 100%;
+            position: relative;
+            font-family: 'rubik';
+            
         }
         img{
-            height:120px;
+           height: 120px; 
         }
         h1{
             color: #636061;
+            font-size: 40px;
+
         }
+        .primeira{
+            background-color: white;
+            text-align: center;
+            font-family: 'rubik';
+        
+        }
+        label{
+            font-family: 'rubik';
+        }
+        .selec{
+            font-family: 'rubik';
+            height: 50px;
+            width: 20px;
+        }
+        body{
+            font-family: 'rubik';
+            margin: auto;
+            padding: 0px;
+            padding-bottom: 5%;
+            
+            
+        }
+        .bloco{
+            margin: auto;
+            padding: 0px;
+            margin: 0px;
+
+        }
+        .sel {
+           padding: 0px;
+           padding-left: 30%;
+        }
+        input{
+            height: 50px;
+            width: 400px;
+            border-radius: 7px;
+            border:  solid 1px;
+            
+            
+        }
+        .born{
+            width: 100px;
+            text-align: center;
+            font-size: large;
+        }
+        .cpf{
+            width: 150px;
+            text-align: center;
+            font-size: large;
+        }
+        .tel{
+            width: 16%;
+            font-size: large;
+        }
+        .pass{
+            width: 20%;
+        }
+        .botaoContinuar{
+            background-color: rgb(248, 5, 50);
+            color: white;
+            width: 40%;
+            font-weight: bold;
+        }
+        .botaoContinuar:hover{
+                cursor: pointer;
+                background-color: #fc172390;
+        }
+        span{
+            color: silver;
+            font-size: 14px;
+        }
+        .check{
+            height: auto;
+            width: auto;
+            background-color: red;
+        }
+
+        
     </style>
 </head>
     <body>
     <!---bloco contendo a logo no topo da página-->
-        <section> 
-            <img src="/imagens/download (10).png">
-        </section>
+        <header> 
+            <img src="/imagens/americanasLogo2.png">
+        </header>
+        <section class="primeira">
         <h1>criar seu cadastro</h1>
 
-            <p>veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :) 
-                <br>* campos obrigatórios
+            <p>veja seus pedidos de forma fácil, compre mais rápido e tenha uma <br>experiência personalizada :) 
+                <br><sup style="color: red;">*</sup>campos obrigatórios
             </p>
+        </section>
             <!---Sequencia de inputs para cadastro de usuário-->
-                <label><sup>*</sup>nome completo</label><br><br>
-                <input type="text" name="nomeCompleto" id="">
-                <br><br>
-                <label><sup>*</sup>como gostaria que a gente te chamasse?</label><br><br>
-                <input type="text" name="apelido" id="" />
-                <br><br>
-                <label><sup>*</sup>gênero</label>
-                <input type="radio" name="genero" id="">feminino
-                <input type="radio" name="genero" id="">masculino
-                <input type="radio" name="genero" id="">não informar
-                <br><br>
-                <label><sup>*</sup>data de nascimento</label><br><br>
-                <input placeholder="__/__/____" type="text" name="data">
-                <br><br>
-                <label><sup>*</sup>CPF</label><br><br>
-                <input placeholder="___.___.___-__" type="text" name="cpf" /><br>
-                    <a href="https://empresas.americanas.com.br/?chave=brd_ca_popup_0_0_empresas">
-                    é pessoa jurídica? conheça a americanas empresas. 
-                    </a><br><br>
-                <label><sup>*</sup>telefone</label><br><br>  
-                <input placeholder="(__)_______-____" type="text" name="tel" id="" /> <br><br>   
-                <input type="checkbox" name="SMS" id="">receber mensagens via sms     
-                <br><br><br>
-                <label><sup>*</sup>e-mail</label><br><br>
-                <input type="text" name="email" id=""><br><br>
-                <input type="checkbox" name="emailpromo" id="" >receber e-mails promocionais
-                <br><br>
-                <label><sup>*</sup>senha</label>   <br><br> 
-                <input type="password" name="senha" id="" /> <br><br>
-                <input type="checkbox" name="permissaodados" id="">compartilhar meus dados com parceiros
-                para ter <br>conteúdos personalizados, veja <a href="">como funciona.</a>  <br><br> 
-                <input type="submit" value="criar seu cadastro">
-                <p>Não se preocupe, nosso site é seguro! Ao criar seu cadastro,<br>
-                você concorda com a nossa <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade">política de privacidade.</a>
-                </p>
-<!--link apontando para página de login--->
-                <p>já tem cadastro? <a href="cloneAmericanasLogin.html" >Entrar</a></p>
+    <div class="bloco">
+            <form class="cadastro">
+                <div class="sel">
+                    <label><sup style="color: red;">*</sup>nome completo</label><br><br>
+                    <input type="text" name="nomeCompleto" id="">
+                    <br><br>
+                </div>
+
+                <div class="sel">
+                    <label><sup style="color: red;">*</sup>como gostaria que a gente te chamasse?</label><br><br>
+                    <input type="text" name="apelido" id="" />
+                    <br><br>
+                </div>
+
+                <div class="sel">
+                    <label><sup style="color: red;">*</sup>gênero</label><br>
+                    <span> pra gente te conhecer um pouquinho melhor :) <br></span>
+                    <input type="radio" name="genero" class="selec">feminino
+                    <input type="radio" name="genero" class="selec">masculino
+                    <input type="radio" name="genero" class="selec">não informar
+                    <br><br><br>
+                </div>
+
+                <div class="sel">
+                    <label><sup style="color: red;">*</sup>data de nascimento</label><br>
+                    <span>necessário pra identificar a maioridade, no formato DD/MM/AAAA <br><br></span>
+                    <input placeholder="__/__/____" type="text" name="data" class="born">
+                    <br><br>
+                </div>
+
+                <div class="sel">
+                    <label><sup style="color: red;">*</sup>CPF</label><br>
+                    <span>necessário pra emissão das Notas Fiscais<br></span><br>
+                    <input placeholder="___.___.___-__" type="text" name="cpf" class="cpf" /><br><br>
+                        <a href="https://empresas.americanas.com.br/?chave=brd_ca_popup_0_0_empresas">
+                        é pessoa jurídica? conheça a americanas empresas.
+                        </a>
+                        <br><br>
+                </div>
+
+                <div class="sel">
+                    <label><sup style="color: red;">*</sup>telefone</label><br> 
+                    <span>caso a gente precise entrar em contato sobre seus pedidos</span><br> <br>
+                    <input placeholder="(__)_______-____" type="text" name="tel" id="" class="tel" /> <br><br>  
+                    <input type="checkbox" name="SMS" id="" class="check" />receber mensagens via sms
+                    <br><br>
+                </div>
+
+                <div class="sel">
+                    <label><sup style="color: red;">*</sup>e-mail</label><br>
+                    <span> informe um e-mail válido. Você vai precisar ativar sua conta depois de criar seu cadastro
+                    </span><br> <br>
+                    <input type="text" name="email" id=""><br><br>
+                    <input type="checkbox" name="emailpromo" id="" class="check" />receber e-mails promocionais
+                    <br><br>
+                </div>
+
+                <div class="sel">
+                    <label><sup style="color: red;">*</sup>senha</label>   <br>
+                    <span>precisa ter entre 6 e 20 caracteres
+                    </span><br><br>
+                    <input type="password" name="senha" id="" class="pass" /> <br><br>
+                    <input type="checkbox" name="permissaodados" id="" class="check" />compartilhar meus dados com parceiros
+                    para ter <br>conteúdos personalizados, veja <a href="">como funciona.</a>  <br><br> 
+                </div>
+            </form>
+   
+        <section class="primeira">
+        <input type="submit" value="criar seu cadastro" class="botaoContinuar">
+        <p>Não se preocupe, nosso site é seguro! Ao criar seu cadastro,<br>
+        você concorda com a nossa <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade">política de privacidade.</a>
+        </p>
+        <p>já tem cadastro? <a href="cloneAmericanasLogin.html" >Entrar</a></p>
+        </section>   
     </body>
 </html>

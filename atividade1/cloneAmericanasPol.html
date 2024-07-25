@@ -4,54 +4,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo sobre Política de Privacidade</title>
+    <!--USO DA FONTE RUBIK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!---Uso do site FONT AWESOME para inclusão dos ícones-->
+    <script src="https://kit.fontawesome.com/28129a743f.js" crossorigin="anonymous"></script>
     <style>
-        section{
-            background-color: red;
+        body{
+            margin: 0;
+            font-family: 'rubik'; 
+        }
+        .cabeca{
+            background-color: rgb(248, 0, 50);
+            max-width: 100%;
+            position: relative;
+            font-family: 'rubik';
+            padding: 0px;
+            
+        }
+        .cabeca > div{
+            display: block;
+            display: inline-block;
+            padding: 2%;
+            color: white;
+        }
+        .corpo{
+            background-color:#bebebe;
+            padding: 5px;;
+        }
+        .barra{
+            width: 500px;
+            height: 20px;
+            border-radius: 6px;
+            border: 0px solid;
+            padding: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+        img{
+           height: 60px;
+        }
+        .logogrey{
+            height: 150px;
         }
         h1{
             color: #2a2a2a;
         }
-
+        .cabeca2{
+            background-color: white;
+        }
+        li{
+            list-style-type: none;  
+            display: inline-block;
+            padding: 0px 10px 0px 15px;
+            margin: 0px;
+        }
+        .a2 {
+            color:silver;
+            font-weight: 500px;
+            font-size: 15px;
+            
+        }
+        .a2:hover{
+            cursor: pointer;
+            color: red;
+            background-color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;   
+            padding: 0px;
+        }
+        .item:hover{
+            background-color: rgb(183, 0, 37);
+        }
+        .containercep{
+            width: 5000px;
+        }
+        .containerhead{
+            display: inline-block;
+            padding: 0px;
+        }
+        .caixalist{
+            padding: 0px;
+            font-size: small;
+            padding-left: 200px;
+        }
+        .caixacep{
+            width: 100px;
+            height: 20px;
+            padding-left: 10%;
+            color: white;
+        }
+        .pe{
+            background-color: #ffffffe0;
+            color: #bebebe;
+            display: inline-block;
+            width: 100%;
+            font-size: 80%;
+            font-weight: 600;
+        }
+        .pe > a{
+            color: #bebebe;
+        }
+        .rodape1{
+            background-color: #bebebe;
+            max-width: 100%;
+            position: relative;
+            font-family: 'rubik';
+            padding: 0px;
+        }
+        .rodape1 > div {
+            display: block;
+            display: inline-block;
+            padding: 10%;
+            color: white;
+            
+        }
+        #bloco1{
+            margin-right: 300px;
+            align-items: top;
+        }
+        ul{
+            padding: 0;
+        }
 
         </style>
+
 </head>
 <body>
-    <table style="background-color: red;">
-        <tr>
-            <td><img src="/imagens/download (10).png"></td>
-
-            <td width="1000px"><input style="width: 300px;" placeholder="busque seu produto aqui" type="search" name="busca"></td>
+<section class="cabeca">
+    <div>
+    <img src="/imagens/americanasLogo2.png">
+    </div>
+    <div>
+        <input type="text" placeholder="busque aqui seu produto " class="barra">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </input>
+    </div>
+    <div>
+        <span>olá, faça seu login<br> ou cadastra-se</span>
         
-    </section>
-    <section style="background-color:whitesmoke">
+    </div>
+    <!---conjunto de divs com os icones no header-->
+    <div>
+        <i class="fa-solid fa-store"></i>
+    </div>
+    <div><i class="fa-regular fa-heart"></i></div>
+    <div><i class="fa-solid fa-basket-shopping"></i></div>
 
-    <table>
-        <tr>
-            <td width="15%">
-                <p><a href="">todos os departamentos</a></p> 
-            </td>
-            <td width="20%">
-                <p><a href="https://www.americanas.com.br/categoria/mercado?chave=pc_cat_menu_mercado">mercado</a></p> 
-            </td>
-            <td width="15%">
-                <p><a href="https://www.americanas.com.br/categoria/celulares-e-smartphones?chave=pfm_hm_tt_1_0_celulares">celulares</a></p>
-            </td>
-            <td width="20%">
-                <p><a href="https://www.americanas.com.br/categoria/eletrodomesticos?chave=pfm_hm_tt_1_0_eletrodom">eletrodomésticos</a></p>
-            </td>
-            <td width="15%">
-                <p><a href="https://www.americanas.com.br/categoria/informatica?chave=pfm_hm_tt_1_0_informatica">informáticos</a></p>
-            </td>
-            <td width="15%">
-                <p><a href="https://www.americanas.com.br/categoria/tv-e-home-theater?chave=pfm_hm_tt_1_0_tv-e-home-theater">tv e home theater</a></p>
-            </td>
-            <td width="15%">
-                <p><a href="https://www.americanas.com.br/categoria/eletroportateis?chave=pfm_hm_tt_1_0_portateis">eletroportáteis</a></p>
-            </td>
-        </tr>
-    </table>
-    </section>
-    <section style="background-color:#bebebe"> <h1>política de privacidade</h1>
+
+<div class="caixalist">
+    <ul>
+        <li>
+            <i class="fa-solid fa-location-dot"></i> <span style="color: white;" >informe seu CEP</span>
+        </li>
+
+        <li class="item">
+            <a href="https://www.americanas.com.br/hotsite/app?chave=prf_hs_0_dt_1_00_baixeoapp">baixe o app</a>
+        </li>
+
+        <li class="item">
+            <a href="https://empresas.americanas.com.br/?chave=brd_hm_tt_0_0_empresas">pra sua empresa</a>
+        </li>
+        <li class="item">
+            <a href="https://www.americanas.com.br/lojas-proximas?chave=brd_hm_tt_0_0_recebahoje">entrega rápida</a>
+        </li>
+        <li class="item">
+            <a href="https://www.americanas.com.br/hotsite/servicos/home?chave=prf_hm_0_tt_8_">serviços</a>
+        </li>
+        <li class="item">
+            <a href="https://nossaslojas.americanas.com.br/?chave=prf_hm_0_tt_9_lojas">nossa lojas</a>
+        </li>
+        <li class="item">
+            <a href="https://www.americanas.com.br/hotsite/app?chave=prf_hs_0_dt_1_00_baixeoapp">oba, cupom</a>
+        </li>
+        <li class="item">
+            <a href="https://www.americanas.com.br/hotsite/app?chave=prf_hs_0_dt_1_00_baixeoapp">lojas oficiais</a>
+        </li>
+        <li class="item">
+            <a href="https://www.americanas.com.br/hotsite/app?chave=prf_hs_0_dt_1_00_baixeoapp">produtos internacionais</a>
+        </li>
+        <li class="item">
+            <a href="https://www.americanas.com.br/hotsite/app?chave=prf_hs_0_dt_1_00_baixeoapp">oferta do dia</a>
+        </li>
+    </ul>
+</div>
+</section>
+
+
+<div class="cabeca2">
+    <ul>
+        <li>
+            <i class="fa-solid fa-bars"></i>
+            <a style="color: black;" href="https://www.americanas.com.br/hotsite/app?chave=prf_hs_0_dt_1_00_baixeoapp" class="a2" >todos os departamentos</a>
+        </li>
+        <li>
+            <a href="https://www.americanas.com.br/categoria/mercado?chave=pc_cat_menu_mercado" class="a2">mercado</a>
+        </li>
+        <li>
+            <a href="https://www.americanas.com.br/categoria/celulares-e-smartphones?chave=pfm_hm_tt_1_0_celulares" class="a2">celulares</a>
+        </li>
+        <li>
+            <a href="https://www.americanas.com.br/categoria/eletrodomesticos?chave=pfm_hm_tt_1_0_eletrodom" class="a2">eletrodomésticos</a>
+        </li>
+        <li>
+            <a href="https://www.americanas.com.br/categoria/informatica?chave=pfm_hm_tt_1_0_informatica" class="a2">informática</a>
+        </li>
+        <li>
+            <a href="https://www.americanas.com.br/categoria/tv-e-home-theater?chave=pfm_hm_tt_1_0_tv-e-home-theater" class="a2">tv e home theater</a>
+        </li>
+        <li>
+            <a href="https://www.americanas.com.br/categoria/eletroportateis?chave=pfm_hm_tt_1_0_portateis" class="a2">eletroportáteis</a>
+        </li>
+        <li>
+            <a href="https://www.americanas.com.br/categoria/moveis?chave=pfm_hm_tt_1_0_moveis" class="a2">móveis</a>
+        </li>
+        <li>
+            <a href="https://www.americanas.com.br/hotsite/lasa-desconto-progressivo?chave=pfm_hm_tt_1_0_showchocolate" class="a2">chocolates e gostosuras</a>
+        </li>
+    </ul>
+</div>
+    
+           
+   
+    
+    <section class="corpo"> <h1>política de privacidade</h1>
     <p>1. Qual o propósito da Política de Privacidade?</p>
     <p>A Americanas tem o compromisso com a transparência, a privacidade e a segurança dos dados de seus clientes durante todo o processo de interação com nosso site, aplicativo e lojas físicas.</p><br>
     <p>A Política de Privacidade, detalhada a seguir, demonstra como os seus dados pessoais são tratados, quais informações coletamos e como as utilizamos, armazenamos ou excluímos, em linha com as disposições da Lei Geral de Proteção de Dados (Lei 13.709/18).</p><br>
@@ -212,44 +390,83 @@ Informações coletadas pelo dispositivo móvel: quando o Cliente baixa ou utili
 <p>26 de novembro de 2021 – Acesse <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade-anterior-26-11-2021">aqui</a></p>
 <p>15 de abril de 2022 – Acesse <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade-anterior-11-06-2021">aqui</a></p>    
 </section>
-<section style="background-color:#bebebe">
 
-<table>
-    <tr>
-        <td width="10%">
-            Sac 4003-4848
-        </td>
-        <td width="10%">
-            <a href="https://www.americanas.com.br/hotsite/guia-de-seguranca?chave=brd_hm_bt_0_footer_guiaseguranca">guia de segurança<a>
-        </td>
-        <td width="10%">
-            <a href="https://www.americanas.com.br/hotsite/app?chave=brd_hm_bt_0_footer_baixeoapp">baixa o app<a>
-        </td>
-        <td width="10%">
-            <a href="https://www.amedigital.com/?q=ame">ame digital<a>
-        </td>
-        <td width="20%">
-            <a href="https://www.americanas.com.br/hotsite/americanas-mundo?chave=brd_hm_bt_0_footer_amundo">produtos internacionais<a>
-        </td>
-        <td width="15%">
-            <a href="https://empresas.americanas.com.br/?chave=brd_hm_ft_0_0_empresas"> americanas emrpresas<a>
-        </td>
-        <td width="15%">
-            <a href="https://www.americanasadvertising.com/?utm_source=site_marcas_americanas&utm_medium=botao_footer&utm_campaign=botao_site_marcas">amercicanas adversiting<a>
+
+<section class="pe">
+    
+    <ul>
+        <li>
+        Sac 4003-4848 
+        </li>
+
+        <li>
+            <a style="color: #bebebe;" href="https://www.americanas.com.br/hotsite/guia-de-seguranca?chave=brd_hm_bt_0_footer_guiaseguranca">guia de segurança<a>
+            </li>
+        <li>
+
+            <a style="color: #bebebe;" href="https://www.americanas.com.br/hotsite/app?chave=brd_hm_bt_0_footer_baixeoapp">baixa o app<a>
+        </li>
+
+        <li>
+            <a style="color: #bebebe;" href="https://www.amedigital.com/?q=ame">ame digital<a>
+            </li>
+        <li>
+            <a style="color: #bebebe;" href="https://www.americanas.com.br/hotsite/americanas-mundo?chave=brd_hm_bt_0_footer_amundo">produtos internacionais<a>
+            </li>
+        <li>
+            <a style="color: #bebebe;" href="https://empresas.americanas.com.br/?chave=brd_hm_ft_0_0_empresas"> americanas emrpresas<a>
+            </li>
+        <li>
+            <a style="color: #bebebe;" href="https://www.americanasadvertising.com/?utm_source=site_marcas_americanas&utm_medium=botao_footer&utm_campaign=botao_site_marcas">amercicanas adversiting<a>
 
             </td>
-        <td width="15%">
-            <a href="https://www.americanas.com.br/hotsite/termos-e-condicoes">entregas e devoluções<a>
-        </td>
-    </tr>
-</table>
+        <li>
+            <a style="color: #bebebe;" href="https://www.americanas.com.br/hotsite/termos-e-condicoes">entregas e devoluções<a>
+            </li>
+        </ul>
+</section>
+<!--<section id="container">
+        <div>
+            <ul>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-tiktok"></i></li>
+            </ul>
+            <img class="logogrey" src="/imagens/lojas-americanas-logogrey.png">
+        </div>
+        <div>
+            <ul>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-tiktok"></i></li>
+            </ul>
+        </div>
+        <br><br><br>
+        <span></span>
+        <span class="123" style="color: black;" >americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902 /0</span>
+        <br><br>
+        <a style="color: black;" href="https://www.americanas.com.br/mapa-do-site" >mapa do site</a>
+    </section>------>
+    <section class="rodape1">
+        <div id="bloco1">
+        <img style="height: 120px;" src="/imagens/lojas-americanas-logogrey.png">
+        </div>
+        <!---conjunto de divs com os icones no header-->
+        <div>
+            <ul>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-tiktok"></i></li>
+            </ul>
+        </div>
+    </section>
         
 
-</section>
-<section style="background-color: white;">
-    <img style="height: 100px;" src="/imagens/download.png">
-    <p>americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902 /0</p>
-    <a href="https://www.americanas.com.br/mapa-do-site">mapa do site</a>
-</section>
 </body>
 </html>

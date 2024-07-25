@@ -3,33 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Login</title>
+    <!--USO DA FONTE RUBIK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <style>
+
         img{
             height: 120px;
         }
-        section{
-            background-color: red;
-            width:100%;
+        .cabeçalho{
+            background-color: rgb(248, 5, 50);
+            position: relative;
+            width: 100%;
+            font-family: "Rubik", sans-serif;
+        }
+        h1{
+            color: #808080;
+            font-family: "Rubik", sans-serif;
+        }
+        p{
+            color: #808080;
+            font-family: "Rubik", sans-serif;
+        }
+        label{
+            color: #808080;
+            font-family: "Rubik", sans-serif;
+        }
+        a{
+            color:#808080;
+            font-family: "Rubik", sans-serif;
+        }
+        .botao{
+            background-color: #fc1723;
+            color: white;
+            font-weight: 100;
+            border-radius: 5px;
+            border: none;
+            width: 300px;
+            height: 50px;
+        }
+        .botao:hover{
+            cursor: pointer;
+            background-color: #fc172390;
+        }
+        .segunda{
+            text-align: center;
+            position: relative;
+        }
+        input{
+            width: 300px;
+            height: 50px; 
+            border-radius: 5px;
+            border: 1px solid; 
+        }
+        .inputs{
+            margin-left: 38%;
+            position:relative;
+            
+        }
+        .baixo{
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <section> 
-        <img src="/imagens/download (10).png">
+    <section class="cabeçalho"> 
+        <img src="/imagens/americanasLogo2.png">
     </section>
+    <section class="segunda">
     <h1>login do cliente</h1>
     <p>veja seus pedidos de forma fácil, compre mais rápido<br>
-    e tenha uma experiência personalizada. :) </p><br>
-    <label><sup>*</sup>e-mail</label><br><br>
+    e tenha uma experiência personalizada. :) </p><br></section>
+    <section class="inputs">
+    <label><sup style="color:red; ">*</sup>e-mail</label><br><br>
     <input type="text" name="email" id="" ><br><br>
-    <label><sup>*</sup>senha</label><br><br>
+    <label><sup style="color: red;">*</sup>senha</label><br><br>
     <input type="password" name="email" id=""><br><br>
-    <input type="button" value="Continuar" style="background-color:red">
+    <input type="button" class="botao" value="Continuar">
+    </section>
+    <section class="baixo">
     <p>Não tem cadastro?<a href="cloneAmericanasCadastro.html">Cadastre-se</a></p>
     <p>Ao continuar com o acesso, você concorda com a nossa <a href="">política de privacidade</a> </p>
-    
+    </section>
 </body>
 </html>

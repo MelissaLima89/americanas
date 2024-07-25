@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position e float</title>
+    <style>
+        /*por padrão o body tem margin*/
+        body{
+            margin: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        /*por padrão a lista tem margin e padding*/
+        ul{
+            list-style: none;
+            background-color: seagreen;
+            padding: 0px;
+            margin: 0px;
+
+        }
+        /*a configuração abaixo dispoe os itens em blocos e linhas*/
+        ul > li{
+            display: inline-block;
+            font-size: 24px;
+            padding: 10px;
+            margin: 5px;
+            background-color: springgreen;
+            border-radius: 10px 10px 0px 0px;/*canto arredondado*/
+            text-transform: lowercase;
+        }
+        /*as duas propriedades abaixo mudam a cor do background
+        ao passar o mouse e mudam o tipo de ponteiro ao
+        passar o mouse e muda a cor do texto nas li's da ul*/
+        ul > li:hover{
+            background-color: teal;
+            cursor: pointer;
+            color: white;
+            
+        }
+        /*margin:auto coloca o elemento automaticamente
+        no centro da tela
+        position define a posição fixa ou não da div*/
+        /*colocando o position em fixed e tirando o margin
+        auto, a caixa fica fixa.*/
+        #conteudo{
+            background-color: #ff660060;
+            width: 500px;
+            padding: 30px;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            border: solid, 2px, purple;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <div id="conteudo"> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur beatae suscipit quisquam eum, expedita iusto quidem illo itaque eligendi. Asperiores nulla quam similique quia cum consequuntur sint perferendis ullam.
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptatibus ducimus quia consequuntur? Accusantium quasi magnam alias, eum voluptatibus reprehenderit sapiente amet ducimus hic. Nisi eos fuga debitis consequatur saepe?</p>
+</body>
+</html>
